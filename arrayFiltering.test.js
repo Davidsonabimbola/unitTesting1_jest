@@ -9,6 +9,17 @@ test('input array of numbers',()=>{
 })
 
 
+test('input array of only even numbers',()=>{
+    expect(filterEvenNumbers([2,4,16,24,46])).toEqual([])
+    
+})
+
+
+test('returns empty array when input is empty',()=>{
+    expect(filterEvenNumbers([])).toEqual([])
+    
+})
+
 
 test('throws an error if input is not an array', () => {
     expect(() => filterEvenNumbers('not an array')).toThrow('Input must be an array');
